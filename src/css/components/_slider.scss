@@ -47,6 +47,7 @@ body {
 }
 
 .contenu {
+    text-align: center;
     h1 {
         font-family: 'Poppins', sans-serif;
         font-weight: 700;
@@ -59,27 +60,30 @@ body {
     }
 
     h2 {
-        font-family:'Courgette', cursive;
+        font-family: 'Courgette', cursive;
         font-size: 60px;
         color: white;
         margin: 0;
     }
 }
 
-.slider1{
+.slider1 {
     background-image: url(../img/master-slides-03.jpg);
-    
+
 }
-.slider2{
+
+.slider2 {
     background-image: url(../img/master-slides-02.jpg);
 }
-.slider3{
+
+.slider3 {
     background-image: url(../img/master-slides-01.jpg);
 }
 
-.swiper-pagination-bullets{
+.swiper-pagination-bullets {
     bottom: 50px !important;
 }
+
 .swiper-pagination-bullet {
     width: 15px;
     height: 15px;
@@ -88,30 +92,81 @@ body {
     background: rgb(255, 255, 255);
     opacity: .2;
 }
+
 .swiper-pagination-bullet-active {
-    
+
     background: #ec1d25;
     opacity: 1;
     border: 3px solid #fff;
 }
-.swiper-button-prev{
+
+.swiper-button-prev {
     left: 50px;
     background: rgba(0, 0, 0, 0.568);
     padding: 30px;
     border-radius: 50px;
     color: #fff;
 }
-.swiper-button-next{
+
+.swiper-button-next {
     right: 50px;
     background: rgba(0, 0, 0, 0.568);
     padding: 30px;
     border-radius: 50px;
     color: #fff;
 }
-.swiper-button-prev:after,  .swiper-button-next:after {
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
     font-size: 15px;
 }
 
-.display{
+.display {
     display: none;
+}
+.invisible{
+    opacity: 0;
+}
+
+
+// swipper2
+.bloc3 {
+    h2{
+        color: #000;
+        font-family: 'Poppins', sans-serif;
+        font-size: 50px;
+        line-height: 60px;
+    }
+    h3{
+        font-weight: 400;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 80vh;
+
+    }
+
+    .swiper-pagination-bullet {
+        background: rgb(0, 0, 0);
+        width: 10px;
+        height: 10px;
+    }
+
+    .swiper-pagination-bullet-active {
+
+        background: #ec1d25;
+        border: 0px;
+    }
+    .profil{
+        width:100px;
+        border-radius: 100px;
+        border: 4px solid #ec1d25;
+        overflow: hidden;
+        display: inline-block;
+        margin: 30px 0;
+        
+    }
+    .fa-star{
+        color: #ec1d25;
+    }
 }
