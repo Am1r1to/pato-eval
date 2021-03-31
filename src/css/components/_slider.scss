@@ -1,0 +1,117 @@
+html,
+body {
+    position: relative;
+    height: 100%;
+}
+
+body {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100vh;
+
+}
+
+.swiper-wrapper {
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+
+    background-position: center;
+    background-size: cover;
+    margin-right: 0px !important;
+    padding-right: 30px;
+}
+
+.contenu {
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 90px;
+        color: white;
+        text-transform: uppercase;
+        letter-spacing: 10px;
+        margin: 0;
+        line-height: 1.5;
+    }
+
+    h2 {
+        font-family:'Courgette', cursive;
+        font-size: 60px;
+        color: white;
+        margin: 0;
+    }
+}
+
+.slider1{
+    background-image: url(../img/master-slides-03.jpg);
+    
+}
+.slider2{
+    background-image: url(../img/master-slides-02.jpg);
+}
+.slider3{
+    background-image: url(../img/master-slides-01.jpg);
+}
+
+.swiper-pagination-bullets{
+    bottom: 50px !important;
+}
+.swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    border-radius: 50%;
+    background: rgb(255, 255, 255);
+    opacity: .2;
+}
+.swiper-pagination-bullet-active {
+    
+    background: #ec1d25;
+    opacity: 1;
+    border: 3px solid #fff;
+}
+.swiper-button-prev{
+    left: 50px;
+    background: rgba(0, 0, 0, 0.568);
+    padding: 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+.swiper-button-next{
+    right: 50px;
+    background: rgba(0, 0, 0, 0.568);
+    padding: 30px;
+    border-radius: 50px;
+    color: #fff;
+}
+.swiper-button-prev:after,  .swiper-button-next:after {
+    font-size: 15px;
+}
+
+.display{
+    display: none;
+}
