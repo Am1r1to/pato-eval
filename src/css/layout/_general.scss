@@ -1,13 +1,40 @@
-.container{
+.container {
     width: 70%;
     height: 100%;
     margin: 0 auto;
-    text-align: center;
 }
-a{
+
+a {
     text-decoration: none;
 }
+
 img {
     max-width: 100%;
     display: block;
 }
+
+.back-to-top {
+
+    a {
+        position: fixed;
+        right: 50px;
+        bottom: 50px;
+        padding: 10px 15px;
+        border-radius: 5px;
+        background-color: rgba(0, 0, 0, 0.568);
+        color: #fff;
+        .fas{
+            font-size: 20px;
+        }
+    }
+
+    :hover {
+        background-color: #d61c22;
+    }
+}
+
+@media screen and (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }

@@ -14,18 +14,31 @@ nav {
     transition: all .2s ease;
     height: 100px;
     transition: .2s ease-in-out;
-.navigation{
-    a{
-        color: rgb(0, 0, 0); 
+
+    .navigation {
+        a {
+            color: rgb(0, 0, 0);
+        }
+
+        :hover {
+            color: #ec1d25;
+            transition: .2s ease-in-out;
+        }
     }
-}
-.burger-menu{
-    div{
-        background: rgb(0, 0, 0); 
+
+    .burger-menu {
+        div {
+            background: rgb(0, 0, 0);
+        }
+
+        &:hover div {
+            background: #d61c22;
+        }
+
     }
-}
 
 }
+
 .navigation {
     width: 100%;
     height: 100%;
@@ -42,17 +55,20 @@ nav {
         padding: 0 15px;
         transition: .2s ease-in-out;
     }
-    :hover{
+
+    :hover {
         color: #ec1d25;
         transition: .2s ease-in-out;
     }
 }
-.side-nav{
+
+.side-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
 }
+
 .burger-menu {
     width: 40px;
     height: 40px;
@@ -70,4 +86,52 @@ nav {
         margin: 5px 0;
 
     }
+
+    &:hover div {
+        background: #d61c22;
+    }
+}
+
+// side-menu
+.side-menu {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: -400px;
+    z-index: 1500;
+    width: 390px;
+    height: 100%;
+    padding: 20px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .2s ease-in-out;
+
+    a {
+        font-family: 'Montserrat', sans-serif;
+        text-transform: uppercase;
+        color: rgb(0, 0, 0);
+        padding: 10px 0;
+        transition: .2s ease-in-out;
+    }
+
+    :hover {
+        color: #ec1d25;
+        transition: .2s ease-in-out;
+    }
+    .btn{
+        background-color: #000;
+        color: #ffffff;
+        margin-top: 20px;
+    }
+    .out{
+        font-size: 30px;
+        align-self:flex-end;
+    }
+
+    
+}
+.reveal{
+    right: 0;
+    transition: .2s ease-in-out;
 }

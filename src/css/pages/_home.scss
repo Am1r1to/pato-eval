@@ -52,6 +52,7 @@ main {
 .image:hover img {
     transform: scale(1.10);
     transition: all .2s ease;
+
 }
 
 //article
@@ -175,6 +176,9 @@ article {
 // parallax2
 .video {
     height: 80vh;
+    .btn{
+        margin-top: 10px;
+    }
 }
 
 // blog
@@ -188,6 +192,36 @@ article {
         .texte-article,
         .image-article, .image {
             width: 100%;
+            position: relative;
         }
+        .image:hover img {
+            cursor: pointer;
+        }
+        .texte-article{
+            text-align: left;
+            align-items: flex-start;
+        }
+        h2{
+            margin: 0;
+            a{
+                font-family: 'Poppins', sans-serif;
+                font-weight: 500;
+                font-size: 22px;
+                line-height: 24px;
+                letter-spacing: 3px;
+                color: #000;
+            }
+        }
+    }
+    .date{
+        color: #fff;
+        background: rgba(0, 0, 0, 0.616);
+        padding: 5px 8px;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        border-radius: 5px;
+        font-family: 'Montserrat',sans-serif;
+        font-size: 12px;
     }
 }

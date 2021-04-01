@@ -17,7 +17,6 @@ var swiper = new Swiper('.swiper-container', {
 
 let swiperWrapper = document.querySelectorAll('.swiper-container');
 let arrows = document.querySelectorAll('.arrows');
-console.log(arrows);
 
 for (let i = 0; i < swiperWrapper.length; i++) {
 
@@ -37,7 +36,12 @@ for (let i = 0; i < swiperWrapper.length; i++) {
 
 //parallax
 var image = document.getElementsByClassName('thumbnail');
-new simpleParallax(image);
+// new simpleParallax(image);
+new simpleParallax(image, {
+	scale: 1.5
+});
+
+
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -46,9 +50,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
   let navigation = document.querySelector('nav');
   let logo1 = document.querySelector('.logo1');
-
-
-
 
   window.addEventListener('scroll', function () {
 
@@ -67,15 +68,34 @@ document.addEventListener('DOMContentLoaded', function () {
   })
 
 
-
-
-
-
-
-
-
-
-
-
-
 })
+//side-menu
+
+let sideMenu = document.querySelector('.side-menu');
+let burgerMenu = document.querySelector('.burger-menu');
+let out = document.querySelector('.out');
+let blackFilter = document.querySelector('.header');
+console.log(blackFilter);
+
+burgerMenu.addEventListener('click', function () {
+  sideMenu.classList.add('reveal');
+  blackFilter.classList.add('visible');
+})
+out.addEventListener('click', function () {
+  sideMenu.classList.remove('reveal');
+  blackFilter.classList.remove('visible');
+})
+
+// Magnific Popup
+
+$(document).ready(function() {
+	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
+		disableOn: 700,
+		type: 'iframe',
+		mainClass: 'mfp-fade',
+		removalDelay: 160,
+		preloader: true,
+
+		fixedContentPos: false
+	});
+});

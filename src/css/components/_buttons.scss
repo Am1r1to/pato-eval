@@ -20,3 +20,16 @@
         color: #ffffff;
     }
 }
+
+.round{
+    color: #000;
+    border-radius: 50px;
+    padding: 25px 30px;
+    font-size: 18px;
+    transition: .2s ease-in-out;
+    &:hover {
+        background-color: #ec1d2491;
+        padding: 28px 33px;
+        transition: .2s ease-in-out;
+    }
+}
