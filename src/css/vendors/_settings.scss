@@ -123,12 +123,12 @@
     border: 0; }
   
   .mfp-close {
-    width: 44px;
-    height: 44px;
+    width: 50px;
+    height: 50px;
     line-height: 44px;
     position: absolute;
     right: 0;
-    top: 0;
+    bottom: -15px;
     text-decoration: none;
     text-align: center;
     opacity: 0.65;
@@ -136,7 +136,9 @@
     color: #FFF;
     font-style: normal;
     font-size: 28px;
-    font-family: Arial, Baskerville, monospace; }
+    font-family: Arial, Baskerville, monospace;
+  
+  }
     .mfp-close:hover,
     .mfp-close:focus {
       opacity: 1; }
@@ -155,13 +157,19 @@
     width: 100%; }
   
   .mfp-counter {
-    position: absolute;
-    top: 0;
-    right: 0;
-    color: #CCC;
-    font-size: 12px;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+    // color: #CCC;
+    // font-size: 12px;
+    // line-height: 18px;
+    // white-space: nowrap; 
+    text-align: left;
     line-height: 18px;
-    white-space: nowrap; }
+    color: #F3F3F3;
+    word-wrap: break-word;
+    padding-right: 36px;
+  }
   
   .mfp-arrow {
     position: absolute;

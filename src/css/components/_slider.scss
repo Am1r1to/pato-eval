@@ -128,6 +128,17 @@ body {
     opacity: 0;
 }
 
+//swipper gallery
+
+.swiper-container.gallery {
+    height: 60vh;
+    .slider1 {
+        background-image: url(../img/master-slides-06.jpg);
+    }
+    h1{
+        font-size: 50px;
+    }
+}
 
 // swipper2
 .bloc3 {
@@ -170,3 +181,4 @@ body {
         color: #ec1d25;
     }
 }
+
