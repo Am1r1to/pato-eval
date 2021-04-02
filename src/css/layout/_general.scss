@@ -23,7 +23,8 @@ img {
         border-radius: 5px;
         background-color: rgba(0, 0, 0, 0.568);
         color: #fff;
-        .fas{
+
+        .fas {
             font-size: 20px;
         }
     }
@@ -35,6 +36,13 @@ img {
 
 @media screen and (prefers-reduced-motion: no-preference) {
     html {
-      scroll-behavior: smooth;
+        scroll-behavior: smooth;
     }
-  }
+}
+
+@media screen and (max-width: 1400px) {
+    .container {
+        width: 95%;
+       
+    }
+}

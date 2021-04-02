@@ -1,8 +1,9 @@
+// swipper1
 var swiper = new Swiper('.swiper-container', {
   spaceBetween: 30,
-  centeredSlides: true,
+  effect: 'fade',
   autoplay: {
-    delay: 5500,
+    delay: 3500,
     disableOnInteraction: false,
   },
   pagination: {
@@ -15,6 +16,24 @@ var swiper = new Swiper('.swiper-container', {
   },
 });
 
+// swipper2
+var swiper = new Swiper('.swiper-container-2', {
+  spaceBetween: 30,
+  autoplay: {
+    delay: 3500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
+// Afficher les fleches lors du survol
 let swiperWrapper = document.querySelectorAll('.swiper-container');
 let arrows = document.querySelectorAll('.arrows');
 
@@ -41,19 +60,17 @@ new simpleParallax(image, {
 	scale: 1.5
 });
 
-
-
 document.addEventListener('DOMContentLoaded', function () {
 
 
-  // white menu
+  // white navigation
 
   let navigation = document.querySelector('nav');
   let logo1 = document.querySelector('.logo1');
 
   window.addEventListener('scroll', function () {
 
-    let alreadyScrolled = window.pageYOffset; // Position (en cours) du scrol
+    let alreadyScrolled = window.pageYOffset;
     if (alreadyScrolled > navigation.clientHeight) {
       navigation.classList.add('white-nav');
       logo1.src = "img/icons/logo2.png";
@@ -66,9 +83,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     }
   })
-
-
 })
+
 //side-menu
 
 let sideMenu = document.querySelector('.side-menu');
@@ -90,7 +106,7 @@ out.addEventListener('click', function () {
 
 $(document).ready(function() {
 	$('.popup-youtube, .popup-vimeo, .popup-gmaps').magnificPopup({
-		disableOn: 700,
+		disableOn: 100,
 		type: 'iframe',
 		mainClass: 'mfp-fade',
 		removalDelay: 160,

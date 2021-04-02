@@ -109,6 +109,10 @@ article {
     background: url(../img/icons/pattern2.png);
     background-repeat: repeat;
     padding: 100px 0;
+
+    .container {
+        text-align: center;
+    }
 }
 
 .gallery {
@@ -175,35 +179,46 @@ article {
 
 // parallax2
 .video {
-    height: 80vh;
-    .btn{
+    height: 700px;
+
+    .btn {
         margin-top: 10px;
     }
 }
 
 // blog
+.titre-blog{
+    text-align: center;
+    margin-top: 100px;
+}
 .blog {
     display: flex;
     justify-content: space-between;
+
     article {
         width: 30%;
         flex-wrap: wrap;
 
         .texte-article,
-        .image-article, .image {
+        .image-article,
+        .image {
             width: 100%;
             position: relative;
         }
+
         .image:hover img {
             cursor: pointer;
         }
-        .texte-article{
+
+        .texte-article {
             text-align: left;
             align-items: flex-start;
         }
-        h2{
+
+        h2 {
             margin: 0;
-            a{
+
+            a {
                 font-family: 'Poppins', sans-serif;
                 font-weight: 500;
                 font-size: 22px;
@@ -213,7 +228,8 @@ article {
             }
         }
     }
-    .date{
+
+    .date {
         color: #fff;
         background: rgba(0, 0, 0, 0.616);
         padding: 5px 8px;
@@ -221,7 +237,109 @@ article {
         bottom: 10px;
         left: 10px;
         border-radius: 5px;
-        font-family: 'Montserrat',sans-serif;
+        font-family: 'Montserrat', sans-serif;
         font-size: 12px;
     }
+}
+
+
+@media screen and (max-width: 765px) {
+    article {
+        flex-direction: column;
+
+        .texte-article,
+        .image-article {
+            width: 100%;
+        }
+
+        .image {
+            width: 60%;
+        }
+    }
+
+    .banner {
+        height: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+
+        .left-images {
+            width: 95%;
+
+            .image:nth-of-type(1),
+            .image:nth-of-type(2) {
+                width: 48%;
+            }
+
+            .image:nth-of-type(3) {
+                width: 100%;
+            }
+        }
+
+        .right-images {
+            width: 95%;
+
+            .image {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    // parallax2
+    .video {
+        .thumbnail {
+            margin-top: 0px;
+        }
+    }
+
+
+    // blog
+    .blog {
+        flex-direction: column;
+        margin: 50px 0;
+        align-items: center;
+
+        article {
+            width: 95%;
+            padding: 20px 0;
+        }
+    }
+
+}
+@media screen and (max-width: 575px) {
+    
+
+    .banner {
+        height: 250px;
+        .simpleParallax{
+            height: 100%;
+        }
+        .thumbnail{
+            margin: 0;
+        }
+    }
+
+    .gallery {
+        .left-images {
+            .image:nth-of-type(1),
+            .image:nth-of-type(2) {
+                width: 100%;
+            }
+        }
+    }
+
+    // parallax2
+    .video {
+        height: 450px;
+        .simpleParallax{
+            height: 100%;
+        }
+        .thumbnail{
+            margin-top: 50px;
+        }
+    }
+
 }
